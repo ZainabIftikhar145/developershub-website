@@ -497,3 +497,129 @@ footer {
     color: #666666;
     font-size: 0.9rem;
 }
+
+/*  MEETING SCHEDULER PAGE  */
+.meeting-scheduler {
+    padding: 5rem 0;
+    background-color: #0a0a0a;
+    min-height: calc(100vh - 70px);
+}
+
+.scheduler-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.scheduler-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.scheduler-info p {
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.info-box {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #2a2a2a;
+}
+
+.info-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.info-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-box ul li {
+    color: #a0a0a0;
+    margin-bottom: 0.5rem;
+}
+
+.booking-form {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+.booking-form select {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.booking-form select:focus {
+    outline: none;
+    border-color: #0066ff;
+}
+
+/* Time Slots */
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.time-slot {
+    background-color: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    padding: 0.8rem;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.time-slot:hover {
+    border-color: #0066ff;
+    background-color: rgba(0, 102, 255, 0.1);
+}
+
+.time-slot.selected {
+    background-color: #0066ff;
+    border-color: #0066ff;
+    color: #ffffff;
+}
+
+/* Active Nav Link */
+.nav-links a.active {
+    color: #0066ff;
+}
+
+/* Responsive for Meeting Page */
+@media (max-width: 768px) {
+    .scheduler-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .time-slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

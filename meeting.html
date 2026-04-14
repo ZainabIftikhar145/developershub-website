@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Meeting | DevelopersHub</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar Start Same as Home Page -->
+    <nav>
+        <div class="logo">
+            <span class="logo-red">Dev</span><span class="logo-black">Hub</span>
+        </div>
+        
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="meeting.html" class="active">Schedule Meeting</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Meeting Scheduler Section Start -->
+    <section class="meeting-scheduler">
+        <div class="container">
+            <h2 class="section-title">Schedule a <span class="highlight">Meeting</span></h2>
+            <p class="section-subtitle">Book a time to discuss your project with our team</p>
+            
+            <div class="scheduler-wrapper">
+                <!-- Left Side: Info -->
+                <div class="scheduler-info">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>Fill out the form and choose a time that works for you. We'll get back to you with a confirmation email.</p>
+                    
+                    <div class="info-box">
+                        <h4>What to expect:</h4>
+                        <ul>
+                            <li>✅ 30-minute consultation</li>
+                            <li>✅ Discuss your project requirements</li>
+                            <li>✅ Get expert advice and solutions</li>
+                            <li>✅ Receive a customized quote</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h4>Meeting Types:</h4>
+                        <ul>
+                            <li>💻 Video Call (Google Meet/Zoom)</li>
+                            <li>📞 Phone Call</li>
+                            <li>🏢 In-Person (Islamabad office)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Booking Form -->
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" id="meetingName" placeholder="Your Full Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="meetingEmail" placeholder="Your Email Address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="meetingPhone" placeholder="Phone Number (Optional)">
+                        </div>
+                        
+                        <!-- Date Selection -->
+                        <div class="form-group">
+                            <label>Select Date</label>
+                            <input type="date" id="meetingDate" required>
+                        </div>
+                        
+                        <!-- Time Slots -->
+                        <div class="form-group">
+                            <label>Select Time Slot</label>
+                            <div class="time-slots">
+                                <button type="button" class="time-slot" data-time="10:00 AM">10:00 AM</button>
+                                <button type="button" class="time-slot" data-time="11:00 AM">11:00 AM</button>
+                                <button type="button" class="time-slot" data-time="12:00 PM">12:00 PM</button>
+                                <button type="button" class="time-slot" data-time="02:00 PM">2:00 PM</button>
+                                <button type="button" class="time-slot" data-time="03:00 PM">3:00 PM</button>
+                                <button type="button" class="time-slot" data-time="04:00 PM">4:00 PM</button>
+                            </div>
+                            <input type="hidden" id="selectedTime" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="meetingType" required>
+                                <option value="">Select Meeting Type</option>
+                                <option value="video">Video Call (Google Meet)</option>
+                                <option value="phone">Phone Call</option>
+                                <option value="inperson">In-Person Meeting</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="meetingMessage" rows="3" placeholder="Tell us about your project (Optional)"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Confirm Booking →</button>
+                        <p id="bookingMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meeting Scheduler Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><span class="logo-red">Dev</span><span class="logo-black">Hub</span></h3>
+                    <p>Building digital solutions that matter. We help businesses grow with cutting-edge technology.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🔗</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DevelopersHub Corporation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
