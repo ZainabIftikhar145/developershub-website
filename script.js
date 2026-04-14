@@ -124,3 +124,51 @@ if (bookingForm) {
         }, 5000);
     });
 }
+
+// Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+
+if (backToTopButton) {
+    // when scroll page
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'flex';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+    
+    // Button click to go at top
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Active Nav Link Highlight on Scroll
+const sections = document.querySelectorAll('section');
+const navLinksItems = document.querySelectorAll('.nav-links a');
+
+if (sections.length > 0 && navLinks.length > 0) {
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - 100)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const href = link.getAttribute('href');
+            if (href === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+}

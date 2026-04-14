@@ -11,7 +11,7 @@
 </head>
 <body>
 
-        <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav>
         <div class="logo">
             <span class="logo-red">Dev</span><span class="logo-black">Hub</span>
@@ -25,11 +25,11 @@
         </div>
         
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="meeting.html">Schedule Meeting</a></li>
         </ul>
     </nav>
@@ -45,11 +45,8 @@
     </section>
     <!-- Hero Section End -->
 
-</body>
-</html>
-
     <!-- Services Section Start -->
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Our <span class="highlight">Services</span></h2>
             <p class="section-subtitle">We deliver cutting-edge technology solutions for your business</p>
@@ -101,8 +98,8 @@
     </section>
     <!-- Services Section End -->
 
-        <!-- About Section Start -->
-    <section class="about">
+    <!-- About Section Start -->
+    <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
@@ -130,7 +127,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Our <span class="highlight">Portfolio</span></h2>
             <p class="section-subtitle">Check out some of our recent projects</p>
@@ -188,8 +185,8 @@
     </section>
     <!-- Portfolio Section End -->
 
-        <!-- Contact Section Start -->
-    <section class="contact">
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
             <p class="section-subtitle">Have a project in mind? Let's talk!</p>
@@ -230,7 +227,10 @@
     </section>
     <!-- Contact Section End -->
 
-        <!-- Footer Start -->
+<!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
+
+    <!-- Footer Start -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -242,11 +242,11 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 
@@ -267,3 +267,8 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
